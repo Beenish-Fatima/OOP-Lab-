@@ -14,7 +14,6 @@ public class Game {
         this.board = new Board(boardSize);
         this.players = new ArrayList<>();
         this.dice = new Dice();
-
         initializePlayers(numPlayers);
     }
 

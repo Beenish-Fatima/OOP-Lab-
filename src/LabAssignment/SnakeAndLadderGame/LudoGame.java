@@ -1,6 +1,6 @@
 package LabAssignment.SnakeAndLadderGame;
 
-public class SnakeAndLadderGame {
+public class LudoGame {
 
 
     public static void main(String[] args) {
