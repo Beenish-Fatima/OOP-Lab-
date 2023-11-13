@@ -2,25 +2,22 @@ package LabAssignment.MetroSuperStore;
 
 public class Product {
 
-    private int ID;
     private String name;
     private double price;
     private int quantity;
+    private double tax;
 
-    public Product(int ID, String name, double price, int quantity) {
-        this.ID = ID;
+    public Product(){
+
+    }
+
+    public Product(String name, double price, int quantity) {
         this.name = name;
         this.price = price;
         this.quantity = quantity;
+        this.tax = tax;
     }
 
-    public int getID() {
-        return ID;
-    }
-
-    public void setID(int ID) {
-        this.ID = ID;
-    }
 
     public String getName() {
         return name;
@@ -46,13 +43,22 @@ public class Product {
         this.quantity = quantity;
     }
 
+    public double getTax() {
+        return tax;
+    }
+
+    public void setTax(double tax) {
+        this.tax = tax;
+    }
+
     @Override
     public String toString() {
         return "Product{" +
-                "ID=" + ID +
-                ", name='" + name + '\'' +
+                "name='" + name + '\'' +
                 ", price=" + price +
                 ", quantity=" + quantity +
+                ", tax=" + tax +
                 '}';
     }
 }
+
